@@ -45,4 +45,22 @@ class Square extends Shapes {
     }
 }
 
-module.exports = Shapes, Circle, Triangle, Square;
+// function shapeSelection(answers) {
+//     if(answers.shapes === 'Circle') {
+
+//         let shapeInput = new Circle (answers.shapeColor, answers.textInput, answers.textColor);
+//         return shapeInput.render();
+
+//     } else if (answers.shapes === 'Triangle') {
+
+//         let shapeInput = new Triangle (answers.shapeColor, answers.textInput, answers.textColor);
+//         return shapeInput.render();
+
+//     } else {
+
+//         let shapeInput = new Square (answers.shapeColor, answers.textInput, answers.textColor);
+//         return shapeInput.render();
+//     }
+// }
+
+module.exports = {Shapes, Circle, Triangle, Square};
