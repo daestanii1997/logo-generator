@@ -1,6 +1,6 @@
 
         <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <rect width="150" height="150" fill="green"/>
-        <text x="75" y="100" font-size="60" text-anchor="middle" fill="purple">kai</text>
+        <circle cx="100" cy="100" r="100" fill="purple"/>
+        <text x="100" y="125" font-size="60" text-anchor="middle" fill="white">Kai</text>
         </svg>
         

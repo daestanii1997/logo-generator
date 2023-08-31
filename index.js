@@ -58,5 +58,3 @@ inquirer
     .catch(err => {
         console.log(err)
     });
-
-    module.exports = {shapeSelection, makeLogo}
