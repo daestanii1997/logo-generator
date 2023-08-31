@@ -28,6 +28,7 @@ inquirer
 
     ]) .then((answers) => {
 
+        // function to create shape
         function shapeSelection(answers) {
             if(answers.shapes === 'Circle') {
         
@@ -57,3 +58,5 @@ inquirer
     .catch(err => {
         console.log(err)
     });
+
+    module.exports = {shapeSelection, makeLogo}

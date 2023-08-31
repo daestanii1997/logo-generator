@@ -12,9 +12,10 @@ class Circle extends Shapes {
     }
     render() {
         return `
-        <svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="25" cy="75" r="20" fill="${this.shapeColor}"/>
-        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.textColor}">${this.textInput}</text>
+        <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="100" fill="${this.shapeColor}"/>
+        <text x="100" y="125" font-size="60" text-anchor="middle" fill="${this.textColor}">${this.textInput}</text>
+        </svg>
         `
     }
 }
@@ -25,9 +26,10 @@ class Triangle extends Shapes {
     }
     render() {
         return `
-        <svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="50, 160 55, 180 70, 180 60, 190 65, 205 50, 195 35, 205 40, 190 30, 180 45, 180" fill="${this.shapeColor}"/>
-        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.textColor}">${this.textInput}</text>
+        <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="100, 15 200, 200 0, 200" fill="${this.shapeColor}"/>
+        <text x="100" y="150" font-size="50" text-anchor="middle" fill="${this.textColor}">${this.textInput}</text>
+        </svg>
         `
     }
 }
@@ -38,29 +40,12 @@ class Square extends Shapes {
     }
     render() {
         return `
-        <svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <rect width="30" height="30" fill="${this.shapeColor}"/>
-        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.textColor}">${this.textInput}</text>
+        <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect width="150" height="150" fill="${this.shapeColor}"/>
+        <text x="75" y="100" font-size="60" text-anchor="middle" fill="${this.textColor}">${this.textInput}</text>
+        </svg>
         `
     }
 }
-
-// function shapeSelection(answers) {
-//     if(answers.shapes === 'Circle') {
-
-//         let shapeInput = new Circle (answers.shapeColor, answers.textInput, answers.textColor);
-//         return shapeInput.render();
-
-//     } else if (answers.shapes === 'Triangle') {
-
-//         let shapeInput = new Triangle (answers.shapeColor, answers.textInput, answers.textColor);
-//         return shapeInput.render();
-
-//     } else {
-
-//         let shapeInput = new Square (answers.shapeColor, answers.textInput, answers.textColor);
-//         return shapeInput.render();
-//     }
-// }
 
 module.exports = {Shapes, Circle, Triangle, Square};
